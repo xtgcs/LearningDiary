@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中布局</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+  .container{
+      width: 200px;
+      height: 80px;
+      border: 1px solid #ccc;
+      text-align: center;
+  }
+    .children{
+        font-size: 20px;
+    }
+
+    .pic{
+        background: #cccccc;
+        padding: 20px;
+        height: 200px;
+    }
+    .pic img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .pic p{
+        display: inline-block;
+    }
+
+    .main{
+       padding: 0 200px;
+    }
+    .middle{
+        position: relative;
+        width: 100%;
+        background: red;
+        height: 200px;
+        float: left;
+        color: #fff;
+        text-align: center;
+    }
+    .left{
+        position: relative;
+        background: blue;
+        width: 200px;
+        height: 200px;
+        float: left;
+        font-size: 20px;
+        color: #fff;
+        margin-left: -100%;
+        left: -200px;
+        text-align: center;
+    }
+    .right{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        float: left;
+        font-size: 20px;
+        color: #fff;
+        background: green;
+        margin-left: -200px;
+        right: -200px;
+        text-align: center;
+    }
+
+
+    .left-box, .right-box,.cont{
+       min-height: 200px;
+        float: left;
+        text-align: center;
+        color: #fff;
+    }
+    .cont{
+        background: red;
+        width: 100%;
+    }
+    .center{
+        margin: 0 200px;
+    }
+    .left-box{
+        background: blue;
+        width: 200px;
+        margin-left: -100%;
+    }
+    .right-box{
+        width: 200px;
+        background: green;
+        margin-left: -200px;
+    }
+</style>
+<body>
+  <h3>1、行内元素水平居中布局</h3>
+  <div class="container">
+      <span class="children">我是span</span>
+  </div>
+  <h3>2、图片和文字垂直居中</h3>
+ <div class="pic">
+     <img src="img/img.jpg" alt="">
+     <p>这是一张图片</p>
+ </div>
+ <h3>3、圣杯布局</h3>
+<div class="main">
+    <div class="middle">圣杯布局测试</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<h3 style="margin-top: 220px">4、双飞翼布局</h3>
+<div class="content">
+    <div class="cont">
+        <div class="center">main</div>
+    </div>
+    <div class="left-box">left</div>
+    <div class="right-box">right</div>
+</div>
+
+
+  <script>
+      for(var i=0;i<=5;i++){
+          setTimeout(function () {
+              console.log(i);
+          },10000)
+      }
+  </script>
+</body>
+</html>

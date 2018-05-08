@@ -25,6 +25,43 @@
       }
       a[6]()    //这里会输出   6  let声明的变量仅在块级作用域有效，所以这里的i只在本轮循环有效果，每次循环的i其实都是一个新的变量
 
+
+
+
+//      3、JS中for循环里面的闭包问题的原因及解决办法
+//
+//      先看一个普通的for循环
+
+
+      function foo(){
+         var arr = [];
+         for(var i=0;i<8;i++){
+           arr[i]=i;
+         }
+         return arr;
+      }
+
+      console.log(foo());   //[0, 1, 2, 3, 4, 5, 6, 7]
+
+//      for循环里包含闭包函数
+
+      function foo2(){
+          var arr=[];
+
+          for(var i=0;i<8;i++){
+              arr[i]=function(){
+                  return i      //由于这个闭包的关系，他是循环完毕之后才返回，最终结果是7++是8
+                                //这个匿名函数里面根本没有i这个变量，所以匿名函数会从父级函数中去找i，
+                                //当找到这个i的时候，for循环已经循环完毕了，所以最终会返回8
+              }
+          }
+          return arr;
+      }
+      console.log(foo2());     //执行8次匿名函数本身
+      console.log(foo2()[1]);   //执行第2个匿名函数本身
+      console.log(foo2()[0]());   //数组中的第一个数返回的是8，这是为什么？
+      console.log(foo2()[1]());   //数组中的第二个数返回的是8，这是为什么？
+
   </script>
 </body>
 </html>
