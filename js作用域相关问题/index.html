@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS中for循环变量作用域</title>
+</head>
+<body>
+  <h3>js中作用域只有函数作用域和全局作用域，在函数体内使用var 定义的变量，会被提到函数开始处进行定义，作用域为整个函数,常见的误区如下</h3>
+  <script>
+      var a=[];
+      for(var i = 0;i<10;i++){
+          var q = i;
+          a[i]=function(){console.log(q)}
+      }
+      a[0]()
+
+//      其中，由于for循环并不是一个函数体，所以for循环中定义的变量q和i是作用域for循环所在的函数体，和a同级，
+//      i++ 和  q=i 并不是重新定义变量，只是重复赋值，最终循环结束，i = 10,q=9;
+//      由于function(){console.log(q)} 并不是立即执行，所以这里的q一直是存储的内存引用，最终所有的a[i]()都是输出 9
+//      不过，在es6中新增了let命令声明变量，用法和var类似，不过let所声明的变量，只在let命令所在的代码块有效果，for循环的计数器中就很适合let命令
+      var a=[];
+      for(let i = 0;i<10;i++){
+          let q = i;
+          a[i]=function(){console.log(q)}
+      }
+      a[6]()    //这里会输出   6  let声明的变量仅在块级作用域有效，所以这里的i只在本轮循环有效果，每次循环的i其实都是一个新的变量
+
+  </script>
+</body>
+</html>
