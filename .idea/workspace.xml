@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81a14be-ea68-4466-b1a9-46a42dd2fe7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Html5/Html5新特性.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css布局/.idea/css布局.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css布局/.idea/jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css布局/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css布局/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css布局/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,12 +26,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Html5新特性.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Html5新特性.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Html5/Html5新特性.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="135">
-                <caret line="9" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+                <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -46,12 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -90,8 +83,8 @@
         <option value="$PROJECT_DIR$/js作用域相关问题/JS中for循环变量作用域.md" />
         <option value="$PROJECT_DIR$/js作用域相关问题/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Html5/Html5新特性.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -187,12 +180,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525745429963</updated>
       <workItem from="1525745431953" duration="15734000" />
-      <workItem from="1526866214154" duration="4139000" />
+      <workItem from="1526866214154" duration="4247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19873000" />
+    <option name="totallyTimeSpent" value="19981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="6" />
@@ -254,22 +247,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Html5/Html5新特性.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Html5/Html5新特性.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
